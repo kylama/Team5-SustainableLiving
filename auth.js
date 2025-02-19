@@ -19,8 +19,12 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
+console.log(window.location.pathname);
+
+
 // Check Authentication State and Redirect If Not Logged In
 onAuthStateChanged(auth, (user) => {
+  console.log("Auth State Changed:", user);
   const isLoginPage = window.location.pathname.includes("login.html");
 
   if (!user && !isLoginPage) {
