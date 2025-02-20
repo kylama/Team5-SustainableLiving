@@ -144,3 +144,11 @@ link {
   --error-color: #f8bbd0;
   --error-color-border: #e63946;
 }
+
+* Header using Flexbox */
+.header-container {
+    display: flex;              /* Enable flexbox layout */
+    flex-direction: row;        /* Align items in a row (column for vertical) */
+    text-align: center;         /* Optional: Center the text inside the header */
+    margin-top: 20px;           /* Optional: Adjust top margin */
+}
