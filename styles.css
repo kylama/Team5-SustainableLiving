@@ -144,3 +144,33 @@ link {
   --error-color: #f8bbd0;
   --error-color-border: #e63946;
 }
+
+* Header using Flexbox */
+.header-container {
+    display: flex;              /* Enable flexbox layout */
+    flex-direction: row;        /* Align items in a row (column for vertical) */
+    text-align: center;         /* Optional: Center the text inside the header */
+    margin-top: 20px;           /* Optional: Adjust top margin */
+}
+
+.impact-container {
+    display: flex;                   /* Enables Flexbox */
+    justify-content: space-between;  /* Spreads items evenly */
+    align-items: flex-start;         /* Aligns items at the top */
+    gap: 20px;                       /* Adds spacing between items */
+    flex-wrap: wrap;                 /* Ensures wrapping on smaller screens */
+    padding: 20px;
+}
+
+.impact-item {
+    display: flex;                   /* Each item is a flex container */
+    flex-direction: column;          /* Stacks image, heading, and text */
+    align-items: center;             /* Centers content */
+    text-align: center;
+    width: 30%;                      /* Ensures equal width for three items */
+    min-width: 250px;                /* Prevents items from getting too small */
+    border: 1px solid #ddd;          /* Optional: Adds a border */
+    padding: 15px;
+    border-radius: 8px;              /* Optional: Rounds corners */
+    background-color: #f8f8f8;       /* Light background for visibility */
+}
