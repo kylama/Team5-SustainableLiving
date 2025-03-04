@@ -152,3 +152,20 @@ link {
     text-align: center;         /* Optional: Center the text inside the header */
     margin-top: 20px;           /* Optional: Adjust top margin */
 }
+
+.impact-container {
+    display: flex;
+    flex-wrap: wrap;        /* Allows items to wrap into new rows */
+    justify-content: center;
+    gap: 20px;
+}
+
+.impact-item {
+    display: flex;                  /* Makes each row a flexbox */
+    align-items: center;            /* Aligns image and text vertically */
+    gap: 20px;                      /* Adds space between image and text */
+    max-width: 800px;               /* Controls width */
+    border: 1px solid #ddd;         /* Adds a border */
+    padding: 15px;                  /* Adds spacing */
+    border-radius: 8px;             /* Rounds corners */
+}
