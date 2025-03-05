@@ -17,6 +17,22 @@
   </head>
 
   <body>
+    <!-- navbar
+    Purpose:
+    - Navigation bar that allows users to jump to different sections of the webpage
+    - Also holds buttons for user settings (dark mode, reduce motion)
+    -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about-topic">About</a></li>
+        <li><a href="#recent-news">News</a></li>
+        <li><a href="#id-3">Link 3</a></li>
+        <li><a href="#id-4">Link 4</a></li>
+        <li><button id="theme-button">Toggle Theme</button></li>
+      </ul>
+    </nav>
+    <!-- other content --->
+
     <!--- Headings --->
     <img />
     <h1>Sustainable Living</h1>
@@ -46,7 +62,7 @@
     </p>
 
     <!--- Data --->
-    <h3>Data about my topic</h3>
+    <h3 id="about-topic">Data about my topic</h3>
     <img src="img/GlobalFoodWasteStats.png" width="590" height="308" />
     <h4>
       Add some charts + captions that illustrate my topic and why it is a
@@ -62,26 +78,35 @@
     </ul>
     <!--- Impact --->
     <h2>Impact!</h2>
-    
-<div class = "impact-container">
-  <div class = "impact-item">
-    <img src="" />
-    <h3>Environmental Damage</h3>
-    <p>Food waste contributes to greenhouse gas emissions, deforestation, and water waste.</p>
-  </div>
 
-  <div class = "impact-item">
-    <img src="" />
-    <h3>Economic Loss</h3>
-    <p>Households, businesses, and governments lose billions annually due to discarded food.</p>
-  </div>
+    <div class="impact-container">
+      <div class="impact-item">
+        <img src="" />
+        <h3>Environmental Damage</h3>
+        <p>
+          Food waste contributes to greenhouse gas emissions, deforestation, and
+          water waste.
+        </p>
+      </div>
 
-  <div class = "impact-item">
-    <img src="" />
-    <h3>Hunger and Inequality</h3>
-    <p>While food is wasted, millions of people face food insecurity and malnutrition.</p>
-  </div>
-</div>
+      <div class="impact-item">
+        <img src="" />
+        <h3>Economic Loss</h3>
+        <p>
+          Households, businesses, and governments lose billions annually due to
+          discarded food.
+        </p>
+      </div>
+
+      <div class="impact-item">
+        <img src="" />
+        <h3>Hunger and Inequality</h3>
+        <p>
+          While food is wasted, millions of people face food insecurity and
+          malnutrition.
+        </p>
+      </div>
+    </div>
     <!--- News --->
     <h2>Recent News</h2>
 
@@ -112,18 +137,71 @@
         </p>
       </article>
     </a>
+    <!-- CONNECT WITH US FORM -->
+    <div id="connect">
+      <h2>Connect with Us</h2>
+      <div class="connect-container">
+        <div class="connect-para">
+          <p>
+            Want to learn more? Fill out the form below to share your name and
+            email!
+          </p>
+        </div>
+        <div class="connect-participants">
+          <p>🎟️ Kyla from Texas has connected.</p>
+          <p>🎟️ Joy from New York has connected.</p>
+          <p>🎟️ Sophia from Montana has connected.</p>
+        </div>
+      </div>
+
+      <!-- Connect Form -->
+      <div class="form-container">
+        <form
+          id="connect-form"
+          title="connect-form"
+          action="https://formspree.io/f/yourFormID"
+          method="POST"
+        >
+          <!-- Name Input -->
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <!-- Email Input -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <!-- Email Input -->
+          <label for="homestate">State:</label>
+          <input
+            type="text"
+            id="state"
+            name="state"
+            placeholder="Your Homestate"
+            required
+          />
+
+          <!-- Formspree note -->
+          <p style="font-size: 0.9em; color: gray">
+            To actually collect responses, connect your form with
+            <a href="https://formspree.io/" target="_blank">Formspree</a>.
+          </p>
+
+          <!-- Submit button -->
+          <button id="connect-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
-
-<body>
-    <!-- Navbar -->
-    <!-- Header Section -->
-    <header class="header-container">
-        <img src="your-image.jpg" alt="Header Image" class="header-item" /> <!-- Image -->
-        <h1 class="header-item">My Activism Project: Topic</h1> <!-- First Text -->
-        <h3 class="header-item">Short description about topic</h3> <!-- Second Text -->
-        <button class="header-item" type="button">oooh this is a button</button> <!-- First Button -->
-        <button class="header-item" type="button">another button!</button> <!-- Second Button -->
-    </header>
-    <!-- other content -->
-</body>
