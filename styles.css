@@ -177,6 +177,17 @@ link {
   --error-color-border: #e63946;
 }
 
+/* Ensure text inside flexbox items is visible */
+.dark-mode .impact-container,
+.dark-mode .impact-item {
+    color: white; /* Ensures text is readable */
+}
+
+/* Ensure flexbox border and background contrast in dark mode */
+.dark-mode .impact-item {
+    background-color: #333; /* Darker background for contrast */
+    border: 1px solid #555; /* Make border visible */
+}
 * Header using Flexbox */ .header-container {
   display: flex; /* Enable flexbox layout */
   flex-direction: row; /* Align items in a row (column for vertical) */
