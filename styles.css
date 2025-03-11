@@ -117,6 +117,38 @@ link {
 }
 
 /*** Dark Mode [PLACEHOLDER] ***/
+/* Default dark mode style */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Example: Different dark mode style for headings */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+    color: pink;
+}
+
+/* Example: Dark mode styles for buttons */
+.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Example: Navbar in dark mode */
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+/* Example: Links in dark mode */
+.dark-mode a {
+    color: lightblue;
+}
 
 /*** Custom Colors (OPTIONAL) ***
   Purpose:
@@ -145,6 +177,17 @@ link {
   --error-color-border: #e63946;
 }
 
+/* Ensure text inside flexbox items is visible */
+.dark-mode .impact-container,
+.dark-mode .impact-item {
+    color: white; /* Ensures text is readable */
+}
+
+/* Ensure flexbox border and background contrast in dark mode */
+.dark-mode .impact-item {
+    background-color: #333; /* Darker background for contrast */
+    border: 1px solid #555; /* Make border visible */
+}
 * Header using Flexbox */ .header-container {
   display: flex; /* Enable flexbox layout */
   flex-direction: row; /* Align items in a row (column for vertical) */
@@ -166,6 +209,7 @@ link {
   flex-direction: column; /* Stacks image, heading, and text */
   align-items: center; /* Centers content */
   text-align: center;
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and min-width */
   width: 30%; /* Ensures equal width for three items */
   min-width: 250px; /* Prevents items from getting too small */
   border: 1px solid #ddd; /* Optional: Adds a border */
