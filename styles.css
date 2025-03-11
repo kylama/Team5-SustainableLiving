@@ -117,6 +117,38 @@ link {
 }
 
 /*** Dark Mode [PLACEHOLDER] ***/
+/* Default dark mode style */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Example: Different dark mode style for headings */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+    color: pink;
+}
+
+/* Example: Dark mode styles for buttons */
+.dark-mode button {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Example: Navbar in dark mode */
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+/* Example: Links in dark mode */
+.dark-mode a {
+    color: lightblue;
+}
 
 /*** Custom Colors (OPTIONAL) ***
   Purpose:
