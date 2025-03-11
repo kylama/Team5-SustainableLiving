@@ -209,6 +209,7 @@ link {
   flex-direction: column; /* Stacks image, heading, and text */
   align-items: center; /* Centers content */
   text-align: center;
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, and min-width */
   width: 30%; /* Ensures equal width for three items */
   min-width: 250px; /* Prevents items from getting too small */
   border: 1px solid #ddd; /* Optional: Adds a border */
