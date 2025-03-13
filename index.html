@@ -10,10 +10,7 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -24,10 +21,10 @@
     -->
     <nav class="navbar">
       <ul>
-        <li><a href="#about-topic">About</a></li>
-        <li><a href="#recent-news">News</a></li>
-        <li><a href="#id-3">Link 3</a></li>
-        <li><a href="#id-4">Link 4</a></li>
+        <li><button onclick="location.href='#about-topic'">About</button></li>
+        <li><button onclick="location.href='#Recent-News'">News</button></li>
+        <li><button onclick="location.href='#connect'">Connect With Us</button></li>
+        <li><button onclick="location.href='#impact'">Learn More</button></li>
         <li><button id="theme-button">Dark/Light Mode</button></li>
       </ul>
     </nav>
@@ -38,13 +35,14 @@
     <h1>Sustainable Living</h1>
 
     <!-- Probably have a signout button in the future-->
-    <h3>Eco-Living Made Simple</h3>
+    <!-- <h3>Eco-Living Made Simple</h3>
     <button type="button">Learn More About Food Waste</button>
-    <button type="button">Sustainable Recipes</button>
+    <button type="button">Sustainable Recipes</button> -->
 
     <!--- About --->
     <h2>What is Food Waste?</h2>
-    <iframe
+    <div class="video-container">
+      <iframe
       width="560"
       height="315"
       src="https://www.youtube.com/embed/ishA6kry8nc?si=ZtiofeHKnk4XL6_d"
@@ -54,16 +52,19 @@
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
+    </div>
     <p>
       Many people go about their day not aware of how their actions impact the
-      environment. Our goal is to increase awareness of people in what they eat,
-      what waste they produce, and how to reduce it. Explore our website to see
+      environment. Our goal is to increase awareness of what we eat,
+      what waste we produce, and how to reduce it. Explore our website to see
       where you stand and join our cause!
     </p>
 
     <!--- Data --->
     <h3 id="about-topic">Data about my topic</h3>
-    <img src="img/GlobalFoodWasteStats.png" width="590" height="308" />
+    <div class="image-container">
+      <img src="img/GlobalFoodWasteStats.png" width="590" height="308" />
+    </div>
     <h4>
       Add some charts + captions that illustrate my topic and why it is a
       problem
@@ -77,7 +78,7 @@
       <li>>45%</li>
     </ul>
     <!--- Impact --->
-    <h2>Impact!</h2>
+    <div id="impact"><h2>Impact!</h2></div>
 
     <div class="impact-container">
       <div class="impact-item">
@@ -108,7 +109,9 @@
       </div>
     </div>
     <!--- News --->
-    <h2>Recent News</h2>
+    <div id= "Recent-News">
+      <h2>Recent News</h2>
+    </div>
 
     <a
       class="article"

@@ -7,14 +7,12 @@
 
 body {
   /* Add a background color or image */
-  background-color: var(
-    --bg-color
-  ); /* see bottom of file for color variables */
+  background-color: #A8E6CF; /* see bottom of file for color variables */
 
   /* Customize the default size, color, and font for text*/
   font-size: 16px;
   color: var(--text-color);
-  font-family: "Nunito Sans";
+  font-family: 'Baloo 2', sans-serif;
 
   /* Put space around the edges of the webpage */
   margin: 50px;
@@ -27,22 +25,68 @@ body {
 ***/
 
 h1 {
-  font-size: 50px;
-  font-weight: 800;
+  font-family: 'Baloo 2', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 25px;
+  font-family: 'Baloo 2', sans-serif;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
   font-weight: 800;
+  margin-bottom: 30px;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centers the container */
+  width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+  height: 315px; /* Set the height of the iframe */
+}
+
+
 h3 {
+  font-family: 'Baloo 2', sans-serif;
+  text-align: center;
+  font-weight: 800; /* Makes headings stand out */
+  font-size: 30px;
 }
 
 h4 {
+  font-family: 'Baloo 2', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800; /* Makes headings stand out */
 }
 
 p {
+  font-family: 'Baloo 2', sans-serif;
+  /* text-align: left; */
+  font-size: 20px;
+  font-weight: 600; /* Makes headings stand out */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centers the container */
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Keeps the aspect ratio */
 }
 
 a,
@@ -51,18 +95,18 @@ a * {
 
 button {
   /* Example Style, replace with your own! */
-  background-color: rgb(88, 134, 88); /* button color */
+  background-color: #698f81;
   color: white; /* text color */
   border: none; /* hides the default border */
   padding: 5px 12px; /* space between button's text and edge */
-  border-radius: 5px; /* curved edges instead of square */
+  border-radius: 75px; /* curved edges instead of square */
   cursor: pointer; /* makes the cursor change when over button */
 }
 
 button:hover {
   /* Make the button look different when the user hovers over it */
-  background-color: rgb(166, 201, 156);
-  color: black;
+  background-color: #557569;
+  color: rgb(174, 174, 174);
 }
 
 /*** header ***
@@ -72,6 +116,11 @@ button:hover {
 
 .header {
   /* Example A: This styles elements with class="header" */
+  font-family: 'Baloo 2', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 
 /*** footer ***
@@ -87,9 +136,19 @@ button:hover {
   Purpose:
   - Add style rules for your website's navbar
 ***/
-
+.navbard{
+  display: flex;
+  justify-content: center;
+  background-color: #698f81;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 .navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
   z-index: 1000; /* Ensures the navbar is on top of other elements */
+  list-style-type: none;
 }
 
 .navbar ul li {
@@ -97,10 +156,19 @@ button:hover {
   margin: 10px;
 }
 
-.navbar ul li a {
+.navbar button{
+  background-color: #557569;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Baloo 2', sans-serif;
 }
 
-.navbar ul li a:hover {
+.navbar button:hover {
+  background-color: #698f81;
+  color: rgb(174, 174, 174);
 }
 
 /*** About Section ***
@@ -113,13 +181,13 @@ button:hover {
   - Add style rules for your website's Links section
 ***/
 link {
-  color: rgb(43, 65, 43);
+  color: #56756a(43, 65, 43);
 }
 
 /*** Dark Mode [PLACEHOLDER] ***/
 /* Default dark mode style */
 .dark-mode {
-    background-color: black;
+    background-color: rgb(77, 77, 77);
     color: white;
 }
 
@@ -127,27 +195,27 @@ link {
 .dark-mode h1, 
 .dark-mode h2, 
 .dark-mode h3 {
-    color: pink;
+    color: rgb(142, 216, 174);
 }
 
 /* Example: Dark mode styles for buttons */
 .dark-mode button {
-    background-color: #444;
-    color: white;
+    background-color:rgb(142, 216, 174);
+    color: rgb(77, 77, 77);
 }
 
 .dark-mode button:hover {
-    background-color: #666;
+    background-color: #96cdba;
 }
 
 /* Example: Navbar in dark mode */
 .dark-mode .navbar {
-    background-color: #222;
+    background-color: rgb(77, 77, 77);
 }
 
 /* Example: Links in dark mode */
 .dark-mode a {
-    color: lightblue;
+    color: rgb(255, 255, 255);
 }
 
 /*** Custom Colors (OPTIONAL) ***
